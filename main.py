@@ -22,5 +22,13 @@ while True:
                 screen_x = screen_w /frame_w * x
                 screen_y = screen_h / frame_h * y
                 pyautogui.moveTo(screen_x, screen_y)
+        left = [landmarks[145], landmarks[159]]
+        for landmark in left:
+            x = int(landmark.x * frame_w)
+            y = int(landmark.y * frame_h)
+            cv2.circle(frame, (x, y), 3, (0, 255, 255))
+            if abs(left[0].y - left[1].y) < 0.004:
+                pyautogui.click()
+                pyautogui.sleep(0.5)
     cv2.imshow('Eye Controlled Mouse', frame)
     cv2.waitKey(1)
