@@ -1,0 +1,3 @@
+mediapie
+pyautogui
+opencv-python
