@@ -7,7 +7,6 @@ This project uses computer vision and facial landmark tracking to detect eye mov
 ---
 
 ## 🚀 Features
-
 - Move mouse cursor using eye movement
 - Blink detection for mouse clicks
 - Real-time webcam processing
